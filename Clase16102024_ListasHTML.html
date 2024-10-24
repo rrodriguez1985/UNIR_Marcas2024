@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas HTML</title>
+</head>
+<body bgcolor="aquamarine">
+    <h1>Listas en HTML5</h1>
+    Las listas en HTML5, nos permiten organizar el texto mediante un formato más elegible y conciso.
+    En HTML5, podemos encontrarnos/utilizar tres tipos de listas:
+    <ul>
+        <li><b>Listas Ordenadas (ol)</b>: Las listas ordenadas, vienen de OrderedList y se representan 
+            <br>con la etiqueta de apertura y cierre ol</li>
+        <li><b>Listas Desordenadas (No Ordenadas)</b>: Las listas desordenadas, vienen de UnorderedList, 
+            <br>y se representan con la etiqueta de apertura y cierre ul</li>
+        <li><b>Listas de Definicion (dl)</b>: Las listas de definición, vienen dadas de Definition List, y 
+            <br>tienen la etiqueta de apertura y de cierre dl</li>
+    </ul>
+    <br>Muy importante: dentro de una lista, sea del tipo que sea, podemos insetar cualquier tipo de información: imágenes, vídeis, tablas,
+    <br>textos, etc.
+    <hr>
+    <h2>Listas Ordenadas (ol)</h2>
+    La estructura de una lista ordenada (ol), viene dada por la etiqueta de apertura y cierre ol
+    Su estructura es la siguiente:
+    <ul>
+        <li>Etiqueta de apertura ol</li>
+        <li>Posteriormente, utilizaremos la etiqueta li, que tiene etiqueta de apertura y cierre.
+            <br>Esta etiqueta es donde insertaremos el texto o contenido de nuestra lista.
+        </li>
+        <li>Por último, tendríamos la etiqueta de cierre ol</li>
+    </ul>
+    <br>Ejemplo de Lista Ordenada sobre Sistemas Operativos
+    <ol>
+        <li>Windows 10/11</li>
+        <li>Linux Mint</li>
+        <li>Ubuntu</li>
+        <li>Kali Linux</li>
+        <li>Mac High Sierra</li>
+    </ol>
+    <hr>
+    <h2>Listas Desordenadas (ul)</h2>
+    La estructura de una lista desordenada (ul), viene dada por la etiqueta de apertura y cierre ul
+    Su estructura es la siguiente:
+    <ul>
+        <li>Etiqueta de apertura ul</li>
+        <li>Posteriormente, utilizaremos la etiqueta li, que tiene etiqueta de apertura y cierre.
+            <br>Esta etiqueta es donde insertaremos el texto o contenido de nuestra lista.
+        </li>
+        <li>Por último, tendríamos la etiqueta de cierre ul</li>
+    </ul>
+    <br>Ejemplo de Lista Desordenada sobre asignaturas de DAM/DAW
+    <ul>
+        <li>Programación</li>
+        <li>BBDD</li>
+        <li>ED</li>
+        <li>SSII</li>
+        <li>IPE</li>
+        <li>Optativa: Inglés</li>
+        <li>LMSGE</li>
+    </ul>
+    <hr>
+    <h2>Atributos asociados a las Listas Ordenadas y Desordenadas</h2>
+    Tanto en las listas ordenadas como desordenas, podemos utilizar una serie de atributos que nos van a permitir
+    <br>modificar/customizar, nuestras listas.
+    <br>En el caso de las listas ordenadas, podemos modificar el orden de comienzo, así como el tipo.
+    <br>Para ello, utilizaremos el atributo <b>start</b> para indicar el orden de comienzo, y el atributo
+    <br><b>type</b> para indicar el tipo de forma que queremos aplicar.
+    <br>En el caso de las listas desordenadas, sólo podemos modificar el tipo, aplicando en este caso también
+    <br>el atributo <b>type</b> y modifican el icono gráfico de este.
+    <ul>
+        <li>Para listas Ordenadas: Aa para indicar que empiece con las letras del abecedario</li>
+        <li>Para listas Ordenadas:Ii para indicar que empiece con números romanos</li>
+        <li>Para listas Ordenadas:Números predeterminados (1,2,3...)</li>
+        <li>Para listas desordenadas: disc (viñeta redondeada rellena)</li>
+        <li>Para listas desordenadas: circle (viñeta redondeada vacía)</li>
+        <li>Para listas desordenadas: square (viñeta cuadra rellena)</li>
+    </ul>
+    <br>Ejemplo de Lista Ordenadas que utilizan letras y empiezan en la posición 5
+    <ol type="A" start="5">
+        <li>Rosa</li>
+        <li>Amarillo</li>
+        <li>Morado</li>
+        <li>Azul</li>
+        <li>Negro</li>
+    </ol>
+    <br>Ejemplo de Lista Desordenada que utilizan el tipo cuadrado relleno
+    <ul type="square">
+        <font color="#ff0080">
+            <li>
+                <font color="green">Rosa </font>
+            </li>
+        </font>
+        <font color="yellow"><li><font color="yellow">Amarillo </font></li></font>
+        <font color="purple"><li><font color="purple">Morado </font></li></font>
+        <font color="blue"><li><font color="blue">Azul </font></li></font>
+        <li><font color="black">Negro </font></li>
+    </ul>
+    <hr>
+    <h2>Listas de Definición (dl)</h2>
+    Las listas de definición, son utilizadas como bien dice su nombre, para poder crear un documento en el que
+    <br>tengamos que realizar definiciones de términos, crear una wiki, un diccionario, etc.
+    <br>Al contrario de las listas ordenadas y desordenadas, las etiquetas y estructura es distinta.
+    <ul>
+        <li><b>dl</b>: Etiqueta de apertura y cierre dl. Description List y que sirte 
+            <br>para delimitar la lista completa</li>
+        <li><b>dt</b>: Viene dada de Description Term, y delimita los términos de nuestra lista</li>
+        <li><b>dd</b>: Viene dada de Definition Description, y delimita las definiciones de nuestra lista</li>
+    </ul>
+    <br>Ejemplo de Lista de Definición
+    <dl>
+        <dt>dl
+            <dd>Crear la caja donde contendrá los items de la lista</dd>
+        </dt>
+        <dt>dt
+            <dd>Items que contiene un término a definir de la lista</dd>
+        </dt>
+        <dt>dd
+            <dd>Item que contiene una definición de la lista</dd>
+        </dt>
+    </dl>
+    <br>
+    <dl>
+        <dt>HTML
+            <dd>Listas Ordenadas y Desordenadas</dd>
+            <dd>Estructura Web</dd>
+        </dt>
+        <dt>CSS
+            <dd>Todo lo relacionado con apariencia</dd>
+            <dd>Responsive Web: CSS Grid y Flexbox</dd>
+        </dt>
+        <dt>JS
+            <dd>Programación y Funcionalidades de JS</dd>
+            <dd>Formularios, Ventanas Modales, etc.</dd>
+        </dt>
+    </dl>
+    <hr>
+    <h2>Listas Anidadas</h2>
+    Las listas anidadas, son la unión de listas ordenadas y desordenadas entre sí.
+    <br>Cuando creamos este tipo de lista, lo normal, es que creemos una lista anidada de hasta un 3 nivel.
+    <ul>
+        <li>Sistemas Operativos
+            <ol>
+                <li>Windows
+                    <ol>
+                        <li>Windows XP</li>
+                        <li>Windows 7</li>
+                        <li>Windows 10</li>
+                        <li>Windows 11</li>
+                    </ol>
+                </li>
+                <li>Linux
+                    <ul>
+                        <li>Kali Linux</li>
+                        <li>Ubuntu</li>
+                        <li>Suse</li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+        <li>Lenguajes de Programación
+            <ol>
+                <li>JavaScript
+                    <ul>
+                        <li>Vue</li>
+                        <li>React</li>
+                        <li>Angular</li>
+                    </ul>
+                </li>
+                <li>Python</li>
+            </ol>
+        </li>
+    </ul>
+    <hr>
+    <h1>Hipervínculos o Hipertexto en HTML5</h1>
+    Los hipertextos o hipervínculos, son un elemento característico de HTML5 que nos permite que las páginas web puedan relacionarse entre sí.
+    <br>Los hipervínculos, están formadas por dos partes:
+    <ul>
+        <li>El enlace: es el elemento (pág. web, imagen, archivo, etc.) sobre el que se puede hacer click con el ratón.</li>
+        <li>El destino: El elemento (pág. web, imagen, archivo, etc.), que se muestra al hacer click en el enlace. </li>
+    </ul>
+    <br>Los hipervínculos en HTML5 tienen la siguiente estructura interna:
+    <ul>
+        <li>La etiqueta de apetura y cierre a (anchor).</li>
+        <li>El atributo href, es dónde vamos a poner el link del elemento que queremos como destino.</li>
+        <li>Entre la etiqueta de apertura y la etiqueta de cirre de a, el texto del hipervínculo o hiperenlace</li>
+    </ul>
+    <br>Ejemplo de hipervínculo en HTML5
+    <br>Pincha <a href="https://estudiarfp.unir.net/" target="_blank">aquí </a>para conocer nuestros títulos de FP
+    <br>
+    <br>
+    <br>Ejemplo de hipervínculo en un correo
+    <br>Para comunicarte con tu profe, pincha <a href="mailto:raul.rodriguez@proeducaglobal.com">aquí</a>
+<h2>Hipertextos con Atributos Globales</h2>
+<ul>
+    <li>
+        <a href="#windows">MS Windows</a>
+    </li>
+    <li>
+        <a href="#linux">Linux</a>
+    </li>
+    <li><a href="#mac">MacOS</a>
+    </li>
+</ul>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae sed dolores itaque quisquam! Eos aut ipsum distinctio itaque velit nesciunt ducimus quisquam, debitis dolore accusamus modi? Doloremque repellat voluptate incidunt!
+Nesciunt aperiam inventore aspernatur, hic necessitatibus ducimus iure voluptate eaque facilis error nihil voluptas facere eveniet! Officia perferendis non ducimus doloremque aliquid. Suscipit aperiam excepturi ex eaque. Atque, quaerat nisi.
+Aspernatur doloremque quam voluptatum blanditiis recusandae saepe iste libero magnam veritatis, quis labore fuga quo aliquam fugiat non praesentium porro. Laborum sapiente excepturi, accusamus ea architecto maiores ipsam neque! Possimus?
+Qui reprehenderit, voluptate eveniet nemo doloremque facilis cupiditate officiis tempore eius sunt numquam dolorem error deserunt repellendus temporibus maiores unde fugiat laudantium hic delectus! Nisi neque hic molestias omnis qui!
+Iste eius odio ducimus quam illum nisi sit animi, tempora aliquam ipsum aut sed consectetur dolorum alias ratione maiores laudantium tenetur illo dolores. Ad a earum repellat quam aliquam alias?
+Ipsa, illum sed enim exercitationem error dolores quas commodi nobis aspernatur praesentium beatae repellendus aliquam nesciunt dolorum itaque magni fugit nisi excepturi natus recusandae et suscipit est expedita alias. Nihil.
+A rem quam eligendi possimus, optio fuga mollitia voluptas reprehenderit quia corrupti magnam nostrum dicta sit cupiditate sunt est accusamus id expedita itaque consectetur minima odio. Quia, praesentium! Eveniet, nobis.
+Necessitatibus molestiae minima, nihil eos eveniet impedit atque, quibusdam illum beatae animi iure repellat odit facilis est recusandae natus hic, sapiente rerum totam. Voluptates odio, ipsa in reiciendis quo ab!
+Reiciendis, et corporis. Fuga ad repellendus soluta iure, facilis distinctio laudantium voluptatem numquam pariatur maxime sit eius provident, cumque accusamus alias accusantium dignissimos exercitationem at! Natus veniam illum minima assumenda.
+Architecto debitis at sit non nobis quisquam perferendis similique neque, facere ab inventore veniam quaerat dicta aspernatur pariatur, totam necessitatibus. Facilis sapiente dolores numquam reiciendis saepe minus consequuntur hic iusto!
+Quod magni aliquam a aperiam eius rem facilis dolore! Alias at ratione tempora, sed, quia totam maxime officia cumque labore deserunt dignissimos fuga placeat quisquam, eaque odio doloremque voluptate tenetur!
+Ipsam aspernatur amet quibusdam tempora! Illo pariatur non minima at rerum praesentium atque impedit similique corrupti incidunt magni, modi cupiditate veritatis quod sed earum ipsum molestias sit fugit id autem!
+Consectetur quo placeat architecto quasi alias, facilis a fugiat. Harum quidem est dignissimos inventore provident nemo dolorum fugiat, qui impedit temporibus. Quibusdam tenetur facere sint, deleniti fugiat blanditiis similique doloribus!
+Facilis excepturi consequatur repellat unde harum? Incidunt obcaecati aliquid sed repellat libero nam exercitationem corrupti dignissimos qui, inventore cum tenetur est sequi suscipit harum cupiditate amet odio voluptatem dicta. Reprehenderit!
+Possimus quisquam aliquam veniam. Velit totam necessitatibus atque quas doloribus, minima et nam dicta quod ea. Ipsum, quis eius corrupti magnam, quod impedit doloribus maiores enim quo assumenda mollitia placeat!
+Qui repudiandae architecto reprehenderit voluptas necessitatibus illo sequi debitis neque optio vel consequuntur repellendus eveniet totam, cumque a in fugiat ipsam, ratione minima, eum facilis voluptatibus nisi nostrum? Perferendis, non!
+Nesciunt laboriosam ullam mollitia id incidunt similique. Error dolor fuga blanditiis accusantium, odit quod debitis harum officiis eveniet quas minus aliquid est saepe vero voluptates totam. Ipsa quaerat blanditiis provident!
+Magni esse labore vel, in vitae ipsa laboriosam libero dolor recusandae velit omnis assumenda. Nam optio fugiat doloremque a iusto doloribus, quo, iure cupiditate dolorum id voluptas provident, autem quaerat.
+Asperiores distinctio aut assumenda, consequuntur dicta cumque totam accusamus laudantium iste officia eos quasi odio laboriosam porro ipsum? Assumenda ut animi minus voluptatibus consectetur ex in praesentium neque perspiciatis necessitatibus.
+Voluptatibus culpa iure sint doloribus mollitia repudiandae atque beatae nesciunt deserunt maxime eos, eius voluptates sequi quo, temporibus dolorem quasi molestiae qui explicabo voluptatem quam, consequuntur saepe corrupti nulla? Alias!
+Atque aliquid cumque quo libero aperiam odit expedita repudiandae nemo voluptas consequatur similique maiores voluptatum, eum minus sunt rerum quod sit, enim numquam modi deserunt? Odio voluptatum et ipsam vel.
+Nam nisi ducimus eos deserunt aspernatur necessitatibus praesentium itaque blanditiis possimus officia exercitationem, obcaecati id harum facere! Voluptate expedita dignissimos aliquam vitae laboriosam quas, at, minima quos corrupti molestiae qui.
+Laborum, nesciunt natus aliquid voluptate minima reiciendis reprehenderit sint unde harum animi minus ut repellat ex, soluta iure, quisquam ullam eaque? Accusantium voluptas pariatur aliquid saepe necessitatibus fuga provident vel?
+Fugiat at quos cumque iste illum perspiciatis magni fuga eveniet aperiam, voluptatem inventore! Ipsa, deleniti? Sequi temporibus quod dicta eius in neque voluptatibus harum, illo magni? Qui doloremque sapiente veritatis!
+Error, saepe incidunt minima animi, magni dignissimos rerum voluptas nemo exercitationem nostrum eligendi excepturi minus voluptatem ut id similique voluptatibus eum. Pariatur corrupti nesciunt eligendi impedit asperiores vero aut quod.
+
+<h3 id="windows">MS Windows</h3>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ex odit quo aperiam, officia beatae illo numquam modi unde ipsum vero tempore molestias dicta exercitationem laborum? Quidem deserunt ut dolorum.
+Officia quis cumque nemo nobis? Animi inventore eos, eligendi corporis asperiores illo a laborum eveniet, assumenda dolorem expedita sunt aperiam porro explicabo tempore, cum dolore? Recusandae perferendis deserunt architecto pariatur.
+Impedit doloremque dolor quo mollitia deleniti error nemo iusto sunt! Alias temporibus rerum non rem sed. Impedit similique, et excepturi tenetur maiores alias! Ducimus asperiores ad suscipit omnis? At, dolorum!
+Doloribus ea, perferendis est placeat eius labore error explicabo facilis nulla, officia cupiditate quo! Suscipit qui quae aperiam? Doloribus eveniet modi voluptate dolor delectus. Repellat ratione recusandae porro dolor itaque.
+Possimus consectetur doloremque explicabo nulla obcaecati. Consequuntur in ad sed blanditiis adipisci, quae deleniti itaque incidunt sunt, rem vero quos molestias magnam officia quo inventore voluptatibus quis dolores expedita esse.
+Similique nihil reiciendis cum aspernatur possimus fugiat esse atque sed. Perspiciatis perferendis blanditiis ipsa recusandae optio deserunt autem. Nemo, sequi! Eligendi perspiciatis similique tempora, vel aut laborum corporis nam ullam!
+Nobis ut omnis alias. Nam fuga sit nulla doloremque expedita reprehenderit itaque enim quaerat quibusdam veritatis eius voluptatibus totam aspernatur sunt quos facilis, repellendus sapiente, consectetur tempore eum. Similique, dolore.
+Tenetur vel fugit voluptatum suscipit tempore possimus, numquam sit blanditiis maxime recusandae quod esse provident aut! Odit eius quis suscipit ab officiis hic beatae adipisci consectetur! Inventore quo sit commodi.
+
+<h3 id="linux">Linux</h3>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quaerat molestiae qui consequatur quia distinctio eaque quibusdam expedita officiis! Hic facilis perferendis sapiente minus deleniti voluptatum ipsam et recusandae perspiciatis!
+Reprehenderit ipsam dignissimos nesciunt in a voluptas ab maxime accusantium. Labore sequi minima voluptatibus dolores? Quas totam natus dolore dolorum, quam quis omnis distinctio maiores nam voluptate quo sed voluptatibus!
+Recusandae quibusdam facere doloribus perferendis nesciunt eos, debitis, sunt repudiandae tempore hic dolorem quam velit quasi ratione commodi voluptate quaerat doloremque nulla accusantium aliquid? Cumque natus impedit dolor optio repellat!
+Doloribus soluta assumenda quisquam consequuntur aut tempore, modi, id, ad ea pariatur debitis aliquid? Eius, consequatur officia. Illo, repellat necessitatibus itaque magni ipsa officia consequuntur hic ipsum, ut laboriosam debitis!
+Non doloribus soluta molestias dolorem. Aliquid laboriosam quaerat exercitationem nam, totam recusandae expedita explicabo distinctio voluptatibus accusamus minus beatae! Veritatis dolorem quidem ut consequatur sapiente cupiditate error maxime quis temporibus.
+Error, sed animi nulla quas officia nisi explicabo consequatur facere aliquam! Rem quisquam atque corporis accusamus voluptatibus ducimus consequuntur, dolor doloribus? Assumenda ipsam placeat molestiae minus sequi? Dolore, facilis nemo!
+Aliquam architecto voluptates libero asperiores vitae accusantium fugit culpa, neque dolorem? A ratione aut optio perspiciatis est nulla consequatur, odio inventore. Commodi, sapiente nostrum. Aperiam quaerat nobis rem voluptatum beatae.
+Odio inventore illum, magni rem dicta quos sapiente, distinctio animi praesentium veniam deserunt fugit assumenda culpa, iure natus corporis minima dolorem neque. Quod quasi autem, iusto eveniet adipisci amet cum?
+Nam perferendis in odio voluptatem debitis molestias quis velit suscipit repellat sed optio qui, reiciendis ducimus tempora ipsa. Iure et at reiciendis mollitia ducimus modi assumenda culpa repudiandae dolorum quas!
+Deserunt, expedita quia beatae delectus mollitia quo eius accusantium fugiat, ut pariatur consequatur consectetur praesentium explicabo reiciendis porro. Quo obcaecati earum sed excepturi eius officiis quibusdam dolorem, explicabo ratione nemo?
+Et nihil ratione culpa sed animi cum fugit officia consectetur impedit, incidunt quos ipsum distinctio beatae, laudantium nostrum. Excepturi vel culpa unde consectetur aspernatur consequuntur sapiente, exercitationem et nulla adipisci!
+Dignissimos odio harum sed eaque doloribus? Facere quam sint ut libero culpa quod sed doloribus debitis, est odio blanditiis assumenda repudiandae eligendi animi architecto perferendis, eius, quidem reiciendis similique temporibus.
+Totam qui fugiat rerum fugit itaque. Exercitationem culpa illum reprehenderit assumenda quod eos temporibus blanditiis nihil nulla beatae perferendis commodi inventore mollitia nisi fuga magnam adipisci soluta, harum accusantium! Similique.
+Laboriosam pariatur doloremque magnam harum itaque deserunt consequuntur? Id repellat voluptas sint laboriosam ad quis placeat amet beatae, ratione sunt cum reprehenderit incidunt consequuntur libero accusantium eius est odit perspiciatis.
+Consectetur, eum. Distinctio voluptas illum ratione quis atque nobis rerum sed laboriosam explicabo sapiente totam optio temporibus soluta, nesciunt laborum ullam assumenda maxime officiis odio a recusandae libero nisi labore?
+At, corrupti id. Corrupti quae ratione in eaque, doloremque, saepe laboriosam vel voluptatem unde suscipit totam. Officiis dicta incidunt eos eius quaerat molestias accusantium consequuntur non, deleniti maxime veniam repellendus.
+Dolorem qui voluptate aut recusandae nemo ad natus molestias velit facere eveniet cum necessitatibus sunt sapiente maxime, quas ea cupiditate. Officia unde, molestiae officiis dolore accusantium dignissimos exercitationem distinctio cupiditate?
+Doloremque dicta eum consequuntur possimus placeat doloribus repellat sequi maxime. Repellendus necessitatibus est repellat excepturi nemo, dignissimos, hic autem exercitationem, veniam molestias porro. Autem velit, molestias eius commodi nobis dolorem.
+Ducimus quibusdam minus dolor ipsum. Ipsa ducimus hic earum, perferendis incidunt, odio doloremque sed maxime quia aspernatur, nostrum voluptates tempore consectetur enim delectus. Fuga ipsa dolor, voluptatem iusto ab consequatur.
+Expedita, nostrum? Nisi laborum vel nulla animi iusto cumque alias in iste, modi, voluptate unde? Iste velit omnis nesciunt odit fuga asperiores itaque blanditiis ipsum, veritatis eius nisi deserunt ducimus?
+Laboriosam mollitia temporibus adipisci? At, laboriosam facere. Consectetur voluptatum quos laudantium, quas dicta officiis doloribus ex ut repudiandae mollitia. Tempore reiciendis velit voluptate, nulla quaerat facilis voluptatem temporibus qui dignissimos.
+Vitae consequuntur facere aliquam necessitatibus dolores eos est voluptatem magni sed accusamus quo similique ipsum temporibus, tenetur quos repudiandae, numquam expedita maxime corporis asperiores consectetur totam, reprehenderit quibusdam quod? Nam!
+Ipsam tempora suscipit nihil quaerat doloremque dolorem repellendus minima inventore nesciunt odit autem ad distinctio nam eos reiciendis harum, culpa qui quis sunt esse tempore velit expedita quibusdam. Qui, labore!
+Dolorem quia nihil fugit corrupti autem! Fuga eligendi, obcaecati itaque dolorum, possimus distinctio reprehenderit quod accusantium error, qui culpa maiores. Alias adipisci accusamus, eligendi culpa at quibusdam sequi expedita nisi?
+Ab a esse totam aliquam quisquam modi in fugiat? Unde aut ipsam dolores, facilis deleniti voluptate inventore sapiente libero explicabo molestias ratione? Amet neque, mollitia non molestias magnam facere quibusdam.
+
+<h3 id="mac">MacOS</h3>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, officia aperiam. Et nesciunt facilis suscipit? Rem repellendus harum corrupti doloremque sint, consequatur tenetur eligendi inventore, excepturi natus praesentium, eaque dolore!
+Illum distinctio unde non, cupiditate architecto at officia, nam ea ut soluta eveniet ipsa molestias a veritatis dicta nihil quisquam doloribus repellat tenetur iusto. Pariatur debitis exercitationem dolorem tempore eos.
+Modi ad dolorum est? Accusamus non sed ut delectus, inventore ratione dolorem quas, facere dicta temporibus obcaecati odio! Mollitia, vitae. Sunt neque, quidem alias saepe nisi quod ullam quas! Expedita.
+Soluta consequatur aut expedita ipsum vel ex minima sunt, in atque reiciendis aliquid ea cum vitae itaque quis molestias accusamus maiores ducimus at. Eaque ratione mollitia sapiente laudantium, consequuntur exercitationem!
+Pariatur rerum facere aliquid corporis in perferendis ad autem harum iure quia libero quis eligendi qui, placeat optio laudantium sint! Cupiditate eos praesentium expedita necessitatibus saepe repellendus distinctio id dicta.
+<hr>
+<h2>Hipervínculo en una foto o imagen en HTML</h2>
+<a href="EjemploPDF.pdf" target="_parent">
+    <img src="img/bob-png" width="500px" height="300px">
+</a>
+<hr>
+<h3>Estructura de cómo vincular elementos en HTML</h3>
+En HTML, cuando vayamos a vincular bien un elemento que tengamos en la misma carpeta o en otras ubicaciones, deberemos tener en cuenta la siguiente
+<br>estructura:
+<br>
+<br><img src="img/Ejemplo_Vincular_Hipervínculos.png" width="600px" height="350px">
+</body>
+</html>
