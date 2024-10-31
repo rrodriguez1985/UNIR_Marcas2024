@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapeado en HTML</title>
+</head>
+<body>
+    <h1>Mapeado en HTML</h1>
+    El mapeado en HTML, consiste en establecer una zona o regíon de una foto, con el fin de que cuando vayamos a pinchar
+    <br> en dicha región, nos conduzca a un documento, página web, etc. que nosotros queramos.
+    La estructura y elemetos de los que va a estar formados un mapeado en HTML, son los siguientes:
+    <ul>
+        <li><b>img</b>: lo vamos a usar para insertar la imagen que queremos mapear</li>
+        <li><b>usemap</b>: indicar un nombre del mapeado de la imagen que queremos realizar. Va a ir asociado a #</li>
+        <li><b>map</b>: establece que vamos a usar un mapeado y que el nombre es el que vamos a vincular del usemap</li>
+        <li><b>area</b>: es la etiqueta que nos va a permitir establecer la zona de mapeado de nuestra imagen</li>
+        <li><b>shape</b>: establece el tipo de mapeado que queremos realizar.
+            <ul>
+                <li>default: establece la zona de mapeado como la de TODA la imagen. Mapeado por defecto.</li>
+                <li>rect: establece un área de mapeado en donde tenemos un punto X1Y1 que se coge de la 
+                    <br>esquina superior izquierda de la imagen, y un punto X2Y2 de la esquina inferior derecha.
+                </li>
+                <li>circle: establece un mapeado circular en donde tenemos un punto X1Y1 y un valor de radio</li>
+                <li>poly: establece un mapeado en donde como mínimo tenemos que tener tres puntos o coordenadas 
+                    <br>para su definición. Las coordenadas en este caso, se establecen siguiendo el sentido
+                    <br>de las agujas del reloj
+                </li>
+            </ul>
+        </li>
+        <li><b>coords</b>: son las coordenadas de los puntos establecidos.</li>
+    </ul>
+    <br>
+    <img src="img/capi.jpg" usemap="#marvel">
+    <map name="marvel">
+        <area shape="rect" coords="0,1,403,821" href="https://estudiarfp.unir.net/" target="_blank">
+        <area shape="circle" coords="527,192,69" href="https://www.marvel.com/" target="_blank">
+        <area shape="poly" coords="524,333,546,317,545,353,529,363" href="https://www.20minutos.es/" target="_blank">
+    </map>
+
+</body>
+</html>
