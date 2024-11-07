@@ -37,6 +37,37 @@
         <area shape="circle" coords="527,192,69" href="https://www.marvel.com/" target="_blank">
         <area shape="poly" coords="524,333,546,317,545,353,529,363" href="https://www.20minutos.es/" target="_blank">
     </map>
-
+    <hr>
+    <h2>Insertar video y audio en páginas HTML5</h2>
+    Para poder insertar vídeos y audios en documentos HTML, utilizaremos las etiquetas video y audio disponibles desde la normativa
+    <br>HTML5.
+    <br>A parte de poder utilizar las etiqutas audio y video para insertar este tipo de contenido multimedia en nuestras webs,
+    <br>también podemos insertar contenido audiovisual disponible en webs de terceros (p.e. Youtube o Vimeo), en donde el procedimiento
+    <br>es distinto al comentado, puesto que utilizaremos una etiqueta llamada "iframe" que lo que hará será insertar este tipo de
+    <br>contenido en nuestras páginas.
+    <h3>Vídeo Insertado desde la plataforma de Youtube</h3>
+    <br>
+    <iframe width="500px" height="300px" src="https://www.youtube.com/embed/JaMfv5zDYa0"  poster="img/marvel.jpg" title="Instalación Apache Web Server en Ubuntu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <video src="multimedia/musica.mp4" controls poster="img/marvel.jpg" width="500px" height="200px"></video>
+    <br>
+    <audio src="multimedia/utomp3.com - JOHN WICK BALLERINA Trailer 4K ULTRA HD NEW 2025.mp3" controls></audio>
+    <br>
+    <h4>Propiedades que podemos usar con las etiquetas video y audio</h4>
+    <ul>
+        <li>src: definir la URL del vídeo o audio que queremos insertar</li>
+        <li>preload: es un elemento usado para audio y vídeo con el fin de almacenar archivos de gran tamaño
+            <br> temporalmente (buffering). Dentro de esta opción, podeis usar: none, auto, metadata (almacenamiento de información)
+        </li>
+        <li>mediagroup: se utilizaba, para agrupar archivos multimedia de distintos formatos, con el fin de que dependiendo
+            <br>del formato soportado por el navegador, se pudiera reproducir uno u otro formato.
+        </li>
+        <li>autoplay: reproducir al inicio</li>
+        <li>loop: reproducción en modo bucle (infinito)</li>
+        <li>muted: silenciar</li>
+        <li>controls: para tener los contoroles del reproductor. Sin ellos, no podemos reproducir los archivos</li>
+        <li>width y height: para dar un tamaño al video</li>
+        <li>poster: para "poner" una foto en el vídeo de nuestro servidor, antes de que le demos a reproducir.</li>
+    </ul>
 </body>
 </html>
