@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas en HTML</title>
+</head>
+<body>
+    <h1>Tablas en HTML</h1>
+    Hasta hace cosa de unos 10-15 años aproximadamente, todo lo que era maquetación web se hacía mediante tablas.
+    <br>Hoy en día, las tablas NO se utilizan para maquetar, sino para insertar cualquier tipo de archivo como pueden ser
+    <br>audios, vídeos, imágenes, formularios, otras tablas... etc. y son una forma de organizar contenido en 
+    <br> nuestras webs.
+    <br>Cuando vayamos a crear/utilizar una tabla en nuestras páginas webs, deberemos tener en cuenta las siguientes
+    <br>propiedades y características:
+    <ul>
+        <li><b>table</b>: sirve para indicar que vamos a utilizar una tabla. Tiene etiqueta de apertura y cierre.</li>
+        <li><b>tr</b>: es la que va a determinar cuantas filas vamos a tener en nuestra tabla.</li>
+        <li><b>td</b>: es el elemento que va a determinar cuantas celdas van a ir insertadas en cada una de las 
+            <br>filas de nuestra tabla.
+        </li>
+    </ul>
+    <br><img src="img/tablas.png" alt="">
+    <br>Ejemplo de Tabla en HTML
+    <table border="1px">
+        <tr>
+            <td>Nombre</td>
+            <td>Apellido</td>
+        </tr>
+        <tr>
+            <td>Raúl</td>
+            <td>Rodríguez</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Propiedades a tener en cuenta a la hora de diseñar una tabla</h2>
+    <ul>
+        <li><b>table</b>: sirve para definir que vamos a utilizar una tabla</li>
+        <li><b>caption</b>:Sirve para poder establecer un título de cabecera de nuestra tabla.
+            <br>Podemos alinear este en la parte superior (top) o en la parte inferior (bottom)
+        </li>
+        <li><b>thead o th</b>: definir la cabecera de una tabla</li>
+        <li><b>tbody</b>: define el contenido de la tabla</li>
+        <li><b>tfoot</b>: define el pie de la tabla</li>
+        <li><b>tr</b>: define la fila para la tabla</li>
+        <li><b>td</b>: define una celda para una fila de la tabla.</li>
+    </ul>
+    <hr>
+    <h5>Ejemplo de tabla 1 con caption:</h5>
+    <br>
+    <br>
+    <table border="10px" bordercolor="pink" align="center">
+        <caption>Sistemas Operativos más comunes</caption>
+        <tr>
+            <td>Sistema Operativo</td>
+            <td>Distribución</td>
+        </tr>
+        <tr>
+            <td>Windows</td>
+            <td>11</td>
+        </tr>
+        <tr>
+            <td>Linux</td>
+            <td>Debian</td>
+        </tr>
+        <tr>
+            <td>MacOS</td>
+            <td>Yosemite</td>
+        </tr>
+    </table>
+    <h5>Ejemplo de tabla 2 con th, tbody y tfoot:</h5>
+    <br>
+    <br>
+    <table border="1px" bordercolor="blue" align="center">
+        <caption>Sistemas Operativos más comunes</caption>
+        <tbody>
+            <tr>
+                <th>Sistema Operativo</th>
+                <th>Distribución</th>
+            </tr>
+            <tr>
+                <td>Windows</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>Linux</td>
+                <td>Debian</td>
+            </tr>
+            <tr>
+                <td>MacOS</td>
+                <td>Yosemite</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h2>Ejemplo de combinación de celdas en tablas</h2>
+    Para poder combinar celdas en tablas, podemos utilizar las siguientes propiedades:
+    <ul>
+        <li><b>rowspan</b>: se utiliza para indicar el número de columna que ocupa la celda (combina columnas)</li>
+        <li><b>colspan</b>: se utiliza para indicar el número de filas que ocupa la celda (combina filas)</li>
+    </ul>
+    <hr>
+    <br>Ejemplo de Tabla Combinada
+    <br>
+    <br>
+    <table border="1px" align="center" bordercolor="blue" width="400px" height="400px" cellspacing="0" bgcolor="red">
+        <tr align="center">
+            <td width="150px" height="150px">A</td>
+            <td width="150px" height="150px">B</td>
+            <td rowspan="3" width="150px" height="150px">C</td>
+            <td width="150px" height="150px"><img src="img/marvel.jpg" width="100%" height="100%"></td>
+        </tr>
+        <tr align="center">
+            <td rowspan="2">E</td>
+            <td bgcolor="pink"><font color="white">F</font></td>
+            <td rowspan="3">G</td>
+        </tr>
+        <tr align="center">
+            <td>H</td>
+        </tr>
+        <tr align="center">
+            <td colspan="2">I</td>
+            <td>J</td>
+        </tr>
+    </table>
+</body>
+</html>
