@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML5</title>
+</head>
+<body>
+    <h1>Formularios HTML</h1>
+    Los formularios en HTML, son elementos que nos van a dotar de cierta funcionalidad y dinamismo a nuestras páginas web.
+    Nos van a permitir interactuar con nuestras páginas web y por lo tanto, son elementos fundamentales para poder 
+    <br>recoger información para posteriormente gestionarla.
+    <br>Los formularios nos van a permitir dis tipos de funcionalidades principales:
+    <ul>
+        <li>Recoger información del usuario</li>
+        <li>Enviar esos datos que se han guardado, para posteriormente procesarlos o para poder realizar
+            <br>cualquier tipo de operación que se requiera con ellos.
+        </li>
+    </ul>
+    <br>Los principales objetivos que tenemos que tener en cuenta a la hora de diseñar un formulario HTML,
+    <br> son los siguientes:
+    <ul>
+        <li>El formulario tiene que ser lo más sencillo posible a la hora de insertar datos por parte del usuario</li>
+        <li>La experiencia del usuario/usabilidad (UX) tiene que ser lo más agradable posible</li>
+        <li>Los datos introducidos en los formularios, tienen que tener un formato predecible y esperado.
+            <br>P.E: Si vamos a intorducir el nombre de usuario, facilitemos al usuario que sepa dónde lo tiene
+            <br> que introducir facilitandole el apartado nombre para que lo vea y sepa que es la zona correcta...
+        </li>
+        <li>Reducir los errores al introducir datos en la medida de lo posible y comunicar claramente al usuario
+            <br>si está dando algún tipo de error al introducirlos...
+        </li>
+    </ul>
+    <h2>Etiquetas básicas para la creación de un Formulario en HTML</h2>
+    Para crear un formulario en HTML, utilizaremos la etiqueta <b>form</b> con apertura y cierre.
+    <br>A parte de utilizar la etiqueta form, que establece que se va a usar/crear un formulario, tenemos que tener
+    <br> en cuenta una serie de propiedades que vamos a usar con ella:
+    <ul>
+        <li><b>action</b>: Indica la URL o BBDD, web, correo... (Dirección Backend) a la que queremos Enviar
+            <br> la información de nuestro formulario.
+        </li>
+        <li><b>method</b>: Método puede ser <b>get</b> o <b>post</b>. Get se utiliza cuando queremos
+            <br> mostrar la información que se envía de nuestro formulario a través del protocolo HTTP/HTTPS de nuestra
+            <br>web.
+            Get se utiliza cuando queremos
+            <br> Post se utiliza para ocular la información que se envía de nuestro formulario a través del protocolo 
+            <br>HTTP/HTTPS de nuestra web.
+        </li>
+        <li><b>name</b>: se utiliza para dar un nombre al formulario</li>
+        <li><b>target</b>: se utiliza para poder abrir el formulario en una pestaña nueva (target=_blank)</li>
+        <li><b>entype</b>: codificación de información mediante token.</li>
+        <li><b>autocomplete</b>: Tine una función on u off, que sirve para activar y desactivar el autocompletado de 
+            <br>nuestra web.
+        </li>
+    </ul>
+    <h4>Ejemplo de Formulario básico</h4>
+    <form action="mailto:raul.rodriguez@proeducaglobal.com" method="post" autocomplete="on" target="_blank">
+        Nombre de Alumno:<input type="text">
+        <br><input type="submit" value="Guardar">
+    </form>
+    <h2>Tipos de datos que podemos gestionar en un Formulario HTML</h2>
+    En un formulario, podemos gestionar cualquier tipo de información que se quiera/requiera. Pero los más 
+    <br>utilizados o que vamos a utilizar más son los siguientes:
+    <ul>
+        <li>Información de texto: Nombres, Apellidos, direcciones físicas, etc. Para esto, utilizaremos
+            <br>la etiqueta input y textarea.(input type=text y el textarea con etiqueta de apertura y cierre) 
+        </li>
+        <li>Números y Cantidades: edades, precios, cuantías, etc. Utilizaremos el elemento input per del tipo 
+            number (input type=number)
+        </li>
+        <li>Fechas y horas: Fechas de nacimientos, calendarios, etc. Utilizaremos el input date, input week, etc.</li>
+        <li>Opciones de verdadero o falso: Utilizaremos el tipo input type=checkbox</li>
+        <li>Opciones únicas: podremos elegir entre 2 o más opciones. input type = radio o la etiqueta select</li>
+        <li>Opciones únicas simples: donde utilizaremos el select multiple, input checkbox,  etc.</li>
+        <li>Opciones de listas abiertas: datalist</li>
+        <li>Seleccionar colores: input type=color</li>
+        <li>Seleccionar un archivo: input type=file</li>
+    </ul>
+    <h3>Ejemplos de las etiquetas de entrada de datos en Formularios HTML</h3>
+    <form action="bbdd.php">
+    Entrada de texto: <input type="text" name="" id="">
+        <br>Texto búsqueda: <input type="search" name="" id="">
+        <br>Introducir número de teléfono: <input type="tel" name="" id="">
+        <br>Introducir dirección url: <input type="url" name="" id="">
+        <br>Introducir dirección de correo: <input type="email" name="" id="">
+        <br>Introducir Password: <input type="password">
+        <br>Opinión sobre la materia de Lenguaje de Marcas y sobre todo, sobre el profe:
+        <br><textarea name="" id="">Escribe tu opinión sincera sobre la materia y profe...(Sin miedo!!!)</textarea>
+        <br>
+        <input type="submit" value="Guardar">
+        <br><input type="reset" value="Borrar">
+    </form>
+    <hr>
+    <h3>Ejemplo de Formulario con etiquetas básicas de entrada</h3>
+    <form action="mailto:raul.rodriguez@proeducaglobal.com">
+        Nombre de usuario: <input type="text" placeholder="Nombre de pila. P.E. Raul">
+        <br>Introducir dirección de correo: <input type="email" placeholder="raul@unir.fp" required>
+        <br><input type="tel" placeholder="+xx xxx xxx xxx">
+        <br>Introducir Password: <input type="password" placeholder="Contraseña alfanumérica...">
+        <br>Web de Contacto: <input type="url" placeholder="https://unir.fp">
+        <br>Opinión:
+        <br><textarea placeholder="Escribe aquí la opinión sobre la materia..." maxlength="5"></textarea>
+        <br><input type="submit" value="Guardar">
+        <input type="reset" value="Borrar">
+    </form>
+    <h2>Campos de Entrada de Infomación Numéricos</h2>
+    Para poder obtener información númerica de nuestros formularios, podemos utilizar dos tipos de campos existentes:
+    <ul>
+        <li>input type=number con el cuál estamos indicando que el valor de entrada será numérico.</li>
+        <li>campo de rango: input type=range</li>
+        <li>Los atributos que van asociados a estos: min (establece un valor mínimo para pasar la validación), 
+            <br>max(número máximo permitido para pasar la validación), el step (permite la variación entre Números
+            <br> para pasar la validación).
+        </li>
+        <br>Ejemplo de Campus Numéricos:
+        Introduce un número: <input type="number" name="" id="">
+        <br>Rango de números<input type="range" name="" id=""min=10 max="55" step="5">
+    </ul>
+    <h2>Campos de Entrada Numéricos: fecha y hora</h2>
+    Dentro de los formularios de HTML, podemos utilizar un tipo de input que nos permite establecer elementos de fecha y hora.
+    <br>Entre los tipos más comunes o que más vamos a utilizar, podemos destacar los siguientes:
+    <ul>
+        <li><b>Fecha</b>: utilizaremos el input = date</li>
+        <li><b>Hora</b>: utilizaremos el input = time</li>
+        <li><b>Fecha y hora local</b>: utilizaremos el input = datetime-local</li>
+        <li><b>Mes</b>: utilizaremos el input = month</li>
+        <li><b>Semana</b>: utilizaremos el input = week</li>
+    </ul>
+    <br>Ejemplos:
+    <br>Fecha: <input type="date" name="" id="">
+    <br>Hora: <input type="time" name="" id="">
+    <br>Fecha y hora local: <input type="datetime-local" name="" id="">
+    <br>Datetime: <input type="datetime" name="" id="">
+    <br>Mes: <input type="month" name="" id="">
+    <br><input type="week" name="" id="">
+    <br>Ejemplo de Formulario con Fechas y Horas con max, min y step
+    <br>Seleccione la fecha deseada: <input type="date"  min="2018-02-23" max="2018-06-23" step="2">
+    <h2>Campos de Entrada de Infomación con Controles: Casillas y Botones</h2>
+    Hay dos tipos de campos de entrada de información de controles, que son los siguientes:
+    <ul>
+        <li>Casillas de verificación (activado o desactivado): <b>input type = checkbox</b></li>
+        <li>Botones de radio (botones de selección única): <b>input type = radio</b></li>
+    </ul>
+    <br>Ejemplo de Formularios con Checkbox y Botones radio
+    <br>Selecciona la titulación que estás estudiando:
+    <br><input type="radio" name="fp" value="ASIR">CFGS ASIR
+    <br><input type="radio" name="fp" value="DAW">CFGS DAW
+    <br><input type="radio" name="fp" value="DAM">CFGS DAM
+    <br>Le gustaría seguir formandose en el mundo IT?
+    <br><input type="checkbox" name="si" checked>Si, me gustaria
+    <br><input type="checkbox" name="duda">Pero depende de lo que me cueste el riñon...
+    <h2>Listas de Selección en Formularios</h2>
+    En los formularios, se utilizan listas de selección, cuando por ejemplo, las casillas de verificación se nos quedan
+    <br>cortas o necesitamos mostrar una lista más extensa de datos.
+    <br>A través de estas listas, podemos mostrar al usuario varias opciones disponibles para elegir una de ellas.
+    <br>Entre los tipos de listados que tenemos para usar en formularios, podemos destacar las siguientes:
+    <ul>
+        <li><b>Listas Cerradas</b>: son listas de opciones en donde tenemos los elementos <b>select</b>y <b>option</b></li>
+        <li><b>Listas Abiertas</b>: son listas de opciones en donde tenemos el elemento <b>datalist</b></li>
+    </ul>
+    <br><b>Ejemplo de Lista Cerrada: Select y Option:</b>
+    <br>Selecciona el Sistema Operativo para tu PC:
+    <select name="sistemas">
+        <option value="1">Windows 10</option>
+        <option value="2">Linux Main</option>
+        <option value="3">Debian</option>
+        <option value="4">Kali</option>
+        <option value="5">Yosemite OS</option>
+    </select>
+    <br><b>Ejemplo de Lista Abierta: datalist:</b>
+    <br>Materias de la titulación DAM/DAW:
+    <input list="asignatura" id="asignatura" name="asignatura" />
+    <datalist id="asignatura">
+        <option value="PROG"></option>
+        <option value="ED"></option>
+        <option value="LMSGE"></option>
+        <option value="BBDD"></option>
+        <option value="SSII"></option>
+        <option value="IPE1"></option>
+        <option value="Ingles"></option>
+    </datalist>
+    <br><b>Ejemplo de Lista de Selección Múltiple</b>
+    <br>Seleccione asignatura y titulación que le gustaría estudiar
+    <br><select name="combo" multiple>
+        <optgroup label="DAW">
+            <option value="1">BBDD</option>
+            <option value="2">SSII</option>
+            <option value="3">ED</option>
+        </optgroup>
+        <optgroup label="ASIR">
+            <option value="1">PAR</option>
+            <option value="2">MARCAS</option>
+            <option value="3">IAW</option>
+        </optgroup>
+    </select>
+    <h2>Selección de Colores</h2>
+    Seleccione el color que desee: <input type="color" name="`coche" value="#1BF444">
+    <!--Recordar, que para poder poner un color por defecto, se suele utilizar sólo nomenclatura RGB o HEX-->
+    <h2>Selección Archivos</h2>
+    En los formularios de HTML, podemos adjuntar archivos para enviarlos.
+    <br>Para poder hacer esto, utilizarmos el atributo accept y también, podemos delimitar e indicar el tipo de archivo
+    <br>(formato) que se quiera adjuntar.
+    <br>Ejemplo de Formulario adjuntando un archivo.
+    <br><form  name="formulario" action="mailto:raul.rodriguez@proeducaglobal.com" method="post">
+        Adjuta tu CV  para las prácticas: <input type="file" name="adjunto" accept=".pdf" multiple>
+        <br><input type="submit" value="Enviar">
+    </form>
+    <h2>Agrupación de Campos</h2>
+    Son etiquetas que nos permiten organizar los elementos de nuestros formularios reagrupándolos por categorías, temáticas,
+    <br> entre otro tipo de cosas.
+    <ul>
+        <li><b>Fieldset</b>: agrupar de manera visual los campos de entrada por temática</li>
+        <li><b>Legend</b>: una leyenda para la etiqueta fieldset</li>
+        <li><b>label</b>: una etiqueta que sirve para relaciona el campo y el texto de un formulario</li>
+    </ul>
+    <br>Ejemplo sencillo de Formulario con Agrupaciones de Campos
+    <form action="mailto:raul@unir.com" method="get" name="ficha">
+        <fieldset>
+            <legend>Ficha del Alumnx</legend>
+            <fieldset>
+                <legend>Datos Personales</legend>
+                Nombre:<input type="text" name="nombre" placeholder="Indica tu nombre de pila">
+                <br>Apellidos: <input type="text" name="apellidos" placeholder="Indica tu 1º y 2º apellido">
+            </fieldset>
+            <fieldset>
+                <legend>Formación Académica</legend>
+                <input type="checkbox" name="SE">Sin Estudios
+                <br><input type="checkbox" name="ESO">ESO / EGB
+                <br><input type="checkbox" name="Bach">Bachillerato
+                <br><input type="checkbox" name="fp">FP GM / GS
+                <br><input type="checkbox" name="grado">Grado Universitario
+                <br><input type="checkbox" name="master">Master
+            </fieldset>
+            <fieldset>
+                <legend>Qué te gustaría estudiar en la UNIR?</legend>
+                <input type="radio" name="fp" value="ASIR">CFGS ASIR
+                <br><input type="radio" name="fp" value="DAW">CFGS DAW
+                <br><input type="radio" name="fp" value="DAM">CFGS DAM
+            </fieldset>
+        </fieldset>
+    </form>
+    <h2>Botones en Formularios HTML</h2>
+    Podemos distinguir 4 tipos de botones para usarlos en formularios:
+    <ul>
+        <li>Botón de Envío de Formulario: input type = submit</li>
+        <li>Botón de envío con imágen: input type = image</li>
+        <li>Botón de reseteo / borrado: input type = reset</li>
+        <li>Botón sin funcionalidad: input type = button o definido con las etiquetas de apertura y cierra button.</li>
+    </ul>
+    <h3>Ejemplo de botones: envío (submit)</h3>
+    Nombre y Apellido: <input type="text"> <input type="submit" value="Enviar">
+    <h3>Ejemplo de botones: envío (submit)</h3>
+    Nombre y Apellido: <input type="text"> <input type="image" src="img/boton.png" width="80px" height="30px">
+    <h3>Ejemplo de botones: borrado o reset</h3>
+    <form action="mailto:raul@unir.com">
+        Nombre y Apellido: <input type="text"><input type="submit" value="enviar"> <input type="reset" value="borrar">
+    </form>
+    <h3>Ejemplo de botones: Sin funcionalidad con con Funcionalidad con JS (JavaScript)</h3>
+    <form action="mailto:raul@unir.com">
+        <button onclick="alert('Hola amigos de DAM/DAW de la UNIR, esto es un mensaje con un botón en JS')">Pulsa aquí para mostrar un saludo y mandar un mail</button>
+    </form>
+
+</body>
+</html>
