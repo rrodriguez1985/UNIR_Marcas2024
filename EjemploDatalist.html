@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Datalist en HTML (Formularios)</title>
+</head>
+<body>
+    <h1>Datalist en HTML (Formularios)</h1>
+    En HTML5, y en concreto en los formularios,es posible crear un tipo de listas através de
+    <br>la etiqueta datalist, que nos permitrá aumentar las opciones de selección además de 
+    <br>personalizarlas según nuestras necesidades /requerimientos:
+    <br>Cuando vayamos a crear una lista con datalist, tenemos que tener en cuenta que se deberá
+    <br> de indicar la misma con un atributo <b>id</b> que sirva para idendificarse, 
+    <br>además, incorporará la etiqueta <b>option</b> como ocurría en las listas cerradas, de la
+    misma manera que lo hacíamos con el <b>select</b>:
+    <br><b>Ejemplo de Datalist:</b>
+    <br><form method="post" action="raul.rodriguez@proeducaglobal.com">
+        Listado de Lenguaje de Programación:<input type="text" list="items">
+        <datalist id="items">
+          <option value="python">Python</option>
+          <option value="java">Java</option>
+          <option value="C++">C++</option>
+          <option value="C#">C#</option>
+          <option value="javascript">JavaScript</option>
+          <option value="go">Go</option>
+        </datalist>
+      </form>
+</body>
+</html>
