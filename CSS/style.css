@@ -1,0 +1,12 @@
+body{
+    background-color: crimson;
+}
+h1{
+    color:whitesmoke;
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+p{
+    text-align: right;
+    color:blue;
+}

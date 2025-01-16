@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción CSS</title>
+</head>
+<body>
+    <h1>Definición de CSS</h1>
+    En las primeras versiones de HTML, teníamos combinado en nuestras páginas (documentos) toda la parte de 
+    <br>estructura(HTML) con lo que llamábamos apariencia ("ahora vamos a llamar CSS").
+    <br>Actualmente esta metodologías ya no se aplica, sino que por norma general, lo que tenemos es por un lado
+    <br> la estructura separada (es decir, HTML sin apariencia) y por otro lado, tenemos lo que es el diseño y/o formato
+    <br> con la apariencia que queremos aplicar a nuestras páginas web, es decir, el CSS.
+    <br>CSS, se puede definir como Cascading StyleSheet, es decir, Hojas de Estilo en Cascada.
+    <br>NO ES UN LENGUAJE DE PROGRAMACIÓN, SINO ES UN LENGUAJE DE TEXTO PLANO CON EL CUAL PODEMOS APLICAR ESTILOS A NUESTRAS WEBS.
+    <br>Por lo tanto, podemos establecer que:
+    <ul>
+        <li><b>HTML</b>: sirve para dar estructura a nuestra web. Es decir, indicar qué es lo que queremos que tenga mi página web.
+            <br>Ejemplo: una imagen, un formulario, un vídeo, tablas, etc.
+        </li>
+        <li><b>CSS</b>: sirve para decir cómo queremos que sean esas estructuras de mi página web.
+            <br>Por ejemplo: una imagen centrada con un borde de color rosa, un color de fondo azul, un tamaño de letra
+            <br> de 34px, una tipografía Arial...
+        </li>
+    </ul>
+    <br><img src="../img/HTML-versus-CSS.jpg.webp" width="500px">
+    <br>
+    <h2>Funcionamiento de CSS</h2>
+        El funcionamiento de CSS, es el siguiente:
+        <ul>
+            <li>En el archivo html (archivo.html) se escriben siempre las etiquetas de la estructura de nuestra web</li>
+            <li>En el archivo css (archivo.css) se escribe cómo queremos que sea nuestra web. --> APARIENCIA (ESTÉTICA)</li>
+            <li>La combinación de ambas, hace que nuestra página web tenga una estructura completa: HTML + CSS = Web Actual</li>
+        </ul>
+        <br> A parte de esto, tenemos que tener en cuenta las siguientes características:
+        <ul>
+            <li>Las hojas de estilo en cascada (CSS), son complementarias a las etiquetas HTML.</li>
+            <li>Los archivos o estilos CSS, sirven para separar estructura de apariencia</li>
+            <li>Evitar el excesivo uso de tablas para la maquetación web...</li>
+            <li>Es un tipo de sistema que es compatible prácticamente hoy en día con todos los navegadores web, y que se
+                <br>aplica en la prog. web, desde la versión HTML 4.1
+            </li>
+            <li>CSS, permite el poder aplicar una única hoja de estilos, a varias pagínas HTML de un mismo o de un distinto proyecto.</li>
+        </ul>
+        <br>Que actualmente existen tres versiones de CSS, en donde la más actual y la que se está utilizando a fecha de hoy es CSS3.
+        <h2>Ventajas de CSS</h2>
+        <ul>
+            <li>Mayor control de la presentación de sitios web</li>
+            <li>Si necesitamos modificar un elemento HTML o de CSS, al estar separados, este trabajo resulta mucho más
+                <br> sencillo de lo que resultaba antes puesto que tenemos separado Estructura de Apariencia.
+            </li>
+            <li>Mayor legilibilidad --> más fácil de interpretar y entender</li>
+            <li>Se reduce duplicidad de estilos. Es decir, podemos tener un único CSS o estilo que se aplique a varias
+                <br> etiquetas o estructuras HTML. Esto nos permite, que a la hora de cargar la página web, vaya todo
+                <br> mucho más fluido y rápido.
+            </li>
+            <li>Es más fácil de crear páginas web adaptadas a distintos dispositivos multimedia: tablets, smartphone, PCs, etc.</li>
+        </ul>
+        <h2>Desventajas de CSS</h2>
+        <ul>
+            <li>A vece dependiendo del navegador, se puede ver de una manera u otra, y además, no todas los estilos CSS
+                <br>son compatibles con todos los navegadores.
+            </li>
+            <li>El uso de las tablas anteriormente nos ayudaba a tener todo mucho más organizado de una manera muy fácil y
+                <br> y sencillo, y ahora con CSS, nos tenemos que "pegar" para poder "cuadrar" y maquetar ciertos elementos 
+                <br> de nuestras webs...
+            </li>
+        </ul>
+        <h2>Funcionamiento de CSS con HTML</h2>
+            El funcionamiento de CSS con HTML, se puede realizar/establecer de tres formas distintas:
+            <ul>
+                <li><b>CSS Externo</b>: Se caracteríza por ser un documento con extensión .css, en el cual tendremos
+                    <br>todas las características de CSS que queremos aplicar en nuestro HTML.
+                    <br>Para vincular un CSS Externo con un HTML, tendremos que utilizar la etiqueta link rel="stylesheet"
+                    <br> href = "nombre_documentoCSS.css" 
+                    <br>Todo esto irá insertado en el head del documento HTML.
+                </li>
+                <li><b>CSS Interno</b>: Es el CSS que irá incrustrado en el head del HTML, pero mediante las etiquetas
+                    <br>de apertura y cierre style.
+                </li>
+                <li><b>CSS Embebido o Inline</b>: consiste en aplicar el CSS mediante el atributo style directamente en
+                    <br>la etiqueta HTML que se desee.
+                </li>
+            </ul>
+    </body>
+</html>

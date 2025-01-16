@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #unico{
+            background-color: blueviolet;
+            color:white;
+            font-size: 22px;
+        }
+        .apariencia{
+            background-color: rgb(226, 43, 119);
+            color:white;
+            font-size: 8px;
+        }
+    </style>
+    <title>Definición de ID y CLASS en HTML y CSS</title>
+</head>
+<body>
+    <h1>Definición de ID</h1>
+    En HTML, tenemos un atributo que se llama "id" y que se referencia como Identificador.
+    <br>En un html se puede utilizar un id para identificar un único elemento o etiqueta
+    <br>dentro de un documento con el fin de aplicarle una serie de características concretas.
+    <br>Es decir, No debería de haber otro elemento con el mismo nombre de identificador (id) dentro
+    <br>del documento HTML.
+    <br>Cuando vayamos a utilizar un id en HTML, utilizaremos la siguiente estructura:
+    <br> nombre etiqueta (por ejemplo, img) id = "nombre_identificador"
+    <br>Ejemplo: img id = "foto" src=....
+    <br>Cuando vayamos a utilizar un id en CSS, utilizaremos la siguiente estructura:
+    <br>#nombre_etiqueta: propiedades a aplicar
+    <br>Ejemplo: #foto{ width = "400px"}
+    <hr>
+    <h3>Ejemplo de ID en HTML y CSS</h3>
+    <div>Esto es un div con id en HTML y CSS</div>
+    <p id="unico">Esto es un elemento salto de párrafo con características en CSS</p>
+    <div>Esto es otro div sin aplicar el id de CSS</div>
+    <h1>Definición de Class</h1>
+    El valor del atributo class, a diferencia del valor del atributo id, puede ser utilizado
+    <br>en más de un elemento de nuestro documento HTML.
+    <br>Es es muy beneficioso cuanto tengamos que aplicar los mismos estios a diferentes elementos,
+    <br>dado que nos permitirá recudir las líneas de código en nuestro archivo CSS.
+    <br>Cuando vayamos aplicar una clase en HTML, seguiremos la siguiente estructura:
+    <br> nombre_etiqueta class = "nombre_clase" --> img class="foto" src=...
+    <br>Cuando vayamos a aplicar una clase en CSS, seguiremos la siguiente estructura:
+    <br> .foto{width = "400px"}
+    <br>Ejemplo:
+    <br><div class="apariencia">Esto es un div con class en HTML y CSS</div>
+    <p class="apariencia" >Esto es un elemento salto de párrafo con características en CSS con una clase</p>
+    <div>Esto es otro div sin aplicar el id de CSS</div>
+</body>
+</html>
