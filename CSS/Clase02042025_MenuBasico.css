@@ -1,0 +1,36 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    color:whitesmoke;
+}
+body{
+    background-image: url(../img/informatica.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+ul{
+    text-align: center;
+    list-style: none;
+    font-size: 0px;
+}
+nav a{
+    text-decoration: none;
+    color:inherit;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav li{
+    display: inline-block;
+    border:1px solid black;
+    width: 220px;
+    background: grey;
+    margin:-2px;
+    text-align: center;
+}
+nav li:hover{
+    background: whitesmoke;
+    color:grey;
+}
