@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+/*Pequeños Reseteos*/
+h1,h3, h4, p{
+    margin: 0px;
+    padding:10px;
+} 
+body{
+    background-color: darkred;
+}
+/*Cambiar el color de la letra de cierto elementos*/
+.rojo{
+    color:#fff;
+}
+/*Contenedor General*/
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px auto;
+    width: 90%;
+}
+/*Parte del logo y del menú*/
+header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.menu_item{
+    padding:0.5em;
+    display: none;
+}
+/*Estilos de la parte principal*/
+main{
+    background-color: rgb(230, 158,132);
+    display: flex;
+    flex-wrap: wrap;
+}
+main section{
+    width: 100%;
+}
+section.images{
+    display: flex;
+    flex-wrap: wrap;
+}
+section.images img{
+    height: 100px;
+    width: 25%;
+}
+.hidden{
+    display:none;
+}
+@media screen  and (min-width:576px){
+    nav{
+        display: flex;
+    };
+    .menu_item{
+        display:inline-block;
+    }
+    .icon{
+        display: none;
+    }
+    .novedades{
+        display: flex;
+    }
+    .novedades>*{
+        width: 25%;
+    }
+    section.main_text, section.images{
+        width: 50%;
+    }
+    section.images img{
+        width: 50%;
+        height: 25%;
+    }
+}
+@media screen and (min-width:992px) {
+    .hidden{
+        display: block;
+    }
+    section.images{
+        order:1;
+    }
+    section.main_text{
+        order:2;
+    }
+    section.images img{
+        height: 33%;
+        width: 33%;
+    }
+}
