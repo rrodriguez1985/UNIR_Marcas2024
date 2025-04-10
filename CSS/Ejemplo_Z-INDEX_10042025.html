@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Ejemplo_Z-INDEX_10042025.css">
+    <title>Ejmeplo Z-INDEX para HTML y CSS</title>
+</head>
+<body>
+    <h1>Propiedad de Profundidad de Niveles (z-index)</h1>
+    La propiedad z-index, es un elemento que podemos usar en CSS para establecer profundidad en un elemento 
+    <br>sobre el resto.
+    <br>
+    <br> Nos permite exactamente situar elementos (principalmente se utilizan en imagenes) una encima de la otra.
+    <br>
+    <br>Su funcionamiento es el siguiente:
+    <ul>
+        <li>Para poder establecer una prounfidonda, sólo tendremos que indicar el nivel de profundidad del elemento.</li>
+        <li>Por ejemplo, si el nivel que le damos es mayor que 0, el elemento se posicionará por encima. (z-index=4)</li>
+        <li>Si el nivle que le damos es menor que 0, es negativo, el elemento se posicionará por debajo. (z-index=-2)</li>
+        <li>Si no le damos valor, o el valor que le damos es 0, el elemento se quedará tal y como aparece por defecto en nuestra web</li>
+        <li>Importante: Tener en cuenta, que la capa o nivel 0, es la capa desde la que partimos, es decir, es como se ha dicho
+            <br>la que viene por defecto.
+        </li>
+    </ul>
+    <br>
+    <br>Es muy importante indicar que los niveles z-indes así como las propiedades asociadas a estas como son: left, top, right y bottom, 
+    <br><b>NO FUNCIONAN</b> con elementos que están posicionados con <b>STATCI (Estático)</b>. Es decir, su posicionamiento debe ser distinto
+    <br> a Static. Puede ser: relative, absolute, fixed, etc.
+    <hr>
+    <h3>Ejemplo Práctico de Aplicación de Propiedad Z-INDEX</h3>
+        <div class="uno">
+            <img src="../img/uno.jpg" alt="">
+        </div>
+        <div class="dos">
+            <img src="../img/dos.jpg" alt="">
+        </div>
+        <div class="tres">
+            <img src="../img/tres.jpg" alt="">
+        </div>
+        <div class="cuatro">
+            <img src="../img/cuatro.jpg" alt="">
+        </div>
+        <div class="cinco">
+            <img src="../img/cinco.jpg" alt="">
+        </div>
+
+
+</body>
+</html>

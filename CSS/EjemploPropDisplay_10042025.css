@@ -1,0 +1,46 @@
+body{
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn{
+    background-color: darkred;
+    color:white;
+    /*para quitar el subrayado de los hipervinculos (etiqueta a + href)*/
+    text-decoration: none;
+    padding:15px 20px;
+    margin:10px 10px;
+    display: inline-block;
+    /* display: inline; */
+    /* display: block; */
+}
+.btn:hover{
+    opacity: 0.7;
+}
+.small{
+    font-size: 14px;
+    padding: 10px 15px;
+}
+.medium{
+    font-size: 16px;
+    padding: 15px 20px;
+}
+.big{
+    font-size: 18px;
+    padding: 20px 25px;
+}
+.extra-big{
+    font-size: 20px;
+    padding: 25px 30px;
+}
+.verde{
+    background-color: green;
+}
+.azul{
+    background-color: blue;
+}
+.naranja{
+    background-color: darkorange;
+}
+.border-radius{
+    border-radius: 100px;
+}
